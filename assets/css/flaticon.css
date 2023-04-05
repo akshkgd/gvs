@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../../assets/fonts/flaticon.ttf?d50691f911d562e5e4cba1227f052cbf") format("truetype"), url("../../assets/fonts/flaticon.woff?d50691f911d562e5e4cba1227f052cbf") format("woff"), url("../../assets/fonts/flaticon.woff2?d50691f911d562e5e4cba1227f052cbf") format("woff2"), url("../../assets/fonts/flaticon.eot?d50691f911d562e5e4cba1227f052cbf#iefix") format("embedded-opentype"), url("../../assets/fonts/flaticon.svg?d50691f911d562e5e4cba1227f052cbf#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-maintenance:before {
+    content: "\f101";
+}
+
+.flaticon-hand-saw:before {
+    content: "\f102";
+}
+
+.flaticon-varnish:before {
+    content: "\f103";
+}
+
+.flaticon-electrician:before {
+    content: "\f104";
+}
+
+.flaticon-plumber:before {
+    content: "\f105";
+}
+
+.flaticon-straight-quotes:before {
+    content: "\f106";
+}
+
+.flaticon-fast-time:before {
+    content: "\f107";
+}
+
+.flaticon-reliability:before {
+    content: "\f108";
+}
+
+.flaticon-loyalty:before {
+    content: "\f109";
+}
+
+.flaticon-transparency:before {
+    content: "\f10a";
+}

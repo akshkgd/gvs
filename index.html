@@ -1,40 +1,981 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl Theme Default Min CSS -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- Remixicon CSS -->
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Meanmenu Min CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Magnific Popup Min CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Odometer Min CSS-->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!-- Navbar CSS-->
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- Title -->
+    <title>Gramin vikas sansthan</title>
 </head>
-  <body>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-md-12 my-5 text-center">
-            <div class="hero">
-                <div class="content">
-                    <h1 class="title">GVS</h1>
-                    <h1 class="fw-bold">We are under maintenance</h1>
-                    <p class="text-white">We are currently working hard on our website.<br>Stay tuned for updates.</p>
-                    <a class="btn">Know More</a>
+
+<body>
+    <!-- Start Preloader Area -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- End Preloader Area -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area">
+        <div class="mobile-responsive-nav">
+            <div class="container">
+                <div class="mobile-responsive-menu">
+                    <div class="logo">
+                        <a href="index.html">
+								<img src="assets/images/logo.png" alt="logo">
+							</a>
+                    </div>
                 </div>
             </div>
-            <!-- <h1>Coming Soon</h1>
-            <p>We are currently working hard on our website.<br>Stay tuned for updates.</p> -->
-          </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <!-- <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Enter your email address" aria-describedby="button-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="button" id="button-addon2">Notify Me</button>
-              </div>
-            </div> -->
-          </div>
+
+        <div class="desktop-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+							<h3>GVS</h3>
+						</a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-auto">
+                            
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">CONTACT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">DOCUMENTS</a>
+                            </li>
+                        </ul>
+
+                        <div class="others-options">
+                            <ul>
+                                <li>
+                                    <button type="button" class="search-icon" data-bs-toggle="modal" data-bs-target="#exampleModalsrc">
+											<i class="ri-search-line"></i>
+										</button>
+                                </li>
+
+                                <li>
+                                    <a href="donation.html" class="default-btn">
+											DONATE NOW
+										</a>
+                                </li>
+                                <li>
+                                    <div class="navbar-option-item navbar-option-language dropdown language-option">
+                                        <button class="dropdown-toggle" type="button" id="language1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="ri-global-line"></i>
+												<span class="lang-name">English</span>
+											</button>
+
+                                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language1">
+                                            <a class="dropdown-item" href="#">
+													<img src="assets/images/language/english.png" alt="Image">
+													English
+												</a>
+                                            <a class="dropdown-item" href="#">
+													<img src="assets/images/language/deutsch.png" alt="Image">
+													Deutsch
+												</a>
+                                            <a class="dropdown-item" href="#">
+													<img src="assets/images/language/china.png" alt="Image">
+													简体中文
+												</a>
+                                            <a class="dropdown-item" href="#">
+													<img src="assets/images/language/arbic.png" alt="Image">
+													العربيّة
+												</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
-      </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+
+        <div class="others-option-for-responsive">
+            <div class="container">
+                <div class="dot-menu">
+                    <div class="inner">
+                        <div class="circle circle-one"></div>
+                        <div class="circle circle-two"></div>
+                        <div class="circle circle-three"></div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="option-inner">
+                        <div class="others-options justify-content-center d-flex align-items-center">
+                            <ul>
+                                <li>
+                                    <button type="button" class="search-icon" data-bs-toggle="modal" data-bs-target="#exampleModalsrc">
+											<i class="ri-search-line"></i>
+										</button>
+                                </li>
+                                <li>
+                                    <a href="donation.html" class="default-btn">
+											DONATE NOW
+										</a>
+                                </li>
+                                <li>
+                                    <div class="navbar-option-item navbar-option-language dropdown language-option">
+                                        <button class="dropdown-toggle" type="button" id="language2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="ri-global-line"></i>
+												<span class="lang-name">English</span>
+											</button>
+
+                                        <div class="dropdown-menu language-dropdown-menu" aria-labelledby="language2">
+                                            <a class="dropdown-item" href="#">
+													<img src="assets/images/language/english.png" alt="Image">
+													English
+												</a>
+                                            <a class="dropdown-item" href="#">
+													<img src="assets/images/language/deutsch.png" alt="Image">
+													Deutsch
+												</a>
+                                            <a class="dropdown-item" href="#">
+													<img src="assets/images/language/china.png" alt="Image">
+													简体中文
+												</a>
+                                            <a class="dropdown-item" href="#">
+													<img src="assets/images/language/arbic.png" alt="Image">
+													العربيّة
+												</a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Search Modal -->
+    <div class="modal fade search-modal-area" id="exampleModalsrc">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <button type="button" data-bs-dismiss="modal" class="closer-btn">
+						<i class="ri-close-line"></i>
+					</button>
+
+                <div class="modal-body">
+                    <form class="search-box">
+                        <div class="search-input">
+                            <input type="text" name="Search" placeholder="Search for..." class="form-control">
+
+                            <button type="submit" class="search-btn">
+									<i class="ri-search-line"></i>
+								</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Modal -->
+
+    <!-- Start Banner Area -->
+    <section class="banner-area used-hight">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>We help the kids to grow up in the right way</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                        <div class="banner-btn">
+                            <a href="about.html" class="default-btn border-radius-btn">
+									READ MORE
+								</a>
+
+                            <div class="call-wrap">
+                                <a href="tel:+1-(514)-312-5678" class="call-us">
+										<i class="ri-phone-fill"></i>
+										CALL US 24/7! <br>
+										<span>+1 (514) 312-5678</span>
+									</a>
+                            </div>
+                        </div>
+
+                        <ul class="social-link">
+                            <li>
+                                <span>Follow us</span>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+										<i class="ri-facebook-fill"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank">
+										<i class="ri-twitter-fill"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/" target="_blank">
+										<i class="ri-linkedin-fill"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+										<i class="ri-instagram-line"></i>
+									</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-img">
+            <img src="assets/images/banner/banner-img.png" alt="Image">
+        </div>
+        <div class="banner-shape-1">
+            <img src="assets/images/banner/banner-shape.png" alt="Image">
+        </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!-- Start Partner Area -->
+    <div class="partner-area ptb-100">
+        <div class="container">
+            <div class="partner-bg">
+                <span>OUR DONORS AROUND THE WORLD</span>
+
+                <div class="partner-slider owl-carousel owl-theme">
+                    <div class="single-partner">
+                        <img src="assets/images/partners/partner-1.png" alt="Image">
+                    </div>
+                    <div class="single-partner">
+                        <img src="assets/images/partners/partner-2.png" alt="Image">
+                    </div>
+                    <div class="single-partner">
+                        <img src="assets/images/partners/partner-3.png" alt="Image">
+                    </div>
+                    <div class="single-partner">
+                        <img src="assets/images/partners/partner-4.png" alt="Image">
+                    </div>
+                    <div class="single-partner">
+                        <img src="assets/images/partners/partner-5.png" alt="Image">
+                    </div>
+                    <div class="single-partner">
+                        <img src="assets/images/partners/partner-6.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Partner Area -->
+
+    <!-- Start Our Mission Area -->
+    <section class="our-mission-area bg-f9fafb pt-100 pb-70">
+        <div class="container">
+            <div class="section-title section-title-left">
+                <span class="top-title">OUR MISSION</span>
+                <h2>Donate services to people in times of need</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-mission">
+                        <img src="assets/images/icon/icon-1.png" alt="Image">
+                        <h3>Help child</h3>
+                        <p>Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-mission">
+                        <img src="assets/images/icon/icon-2.png" alt="Image">
+                        <h3>Safe housing</h3>
+                        <p>Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-mission">
+                        <img src="assets/images/icon/icon-3.png" alt="Image">
+                        <h3>Education</h3>
+                        <p>Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-mission">
+                        <img src="assets/images/icon/icon-4.png" alt="Image">
+                        <h3>Healthy food</h3>
+                        <p>Nulla porttitor accumsan tincidunt. Donec rutrum congue leo eget malesuada. Pellentesque in ipsum id orci porta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Mission Area -->
+
+    <!-- Start About Area -->
+    <section class="about-area ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img mr-15">
+                        <img src="assets/images/about-img.png" alt="Image">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-content ml-15">
+                        <span class="top-title">ABOUT US</span>
+                        <h2>We are Leud charity foundation</h2>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi accumsan id imperdiet Curabitur arcu erat.</p>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, enim iure! Reprehenderit facilis reiciendis, harum odit esse animi repellat iste, ratione fuga architecto corporis distinctio perferendis earum expedita. Repellat,
+                            ad sit amet consectetur</p>
+
+                        <a href="about.html" class="default-btn">
+								READ MORE
+							</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Area -->
+
+    <!-- Start Our Causes Area -->
+    <section class="our-causes-area ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="section-title section-title-left">
+                        <span class="top-title">OUR CAUSES</span>
+                        <h2>You can help the kids by donating</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="text-right">
+                        <a href="causes.html" class="default-btn">MORE CAUSES</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="causes-slider owl-carousel owl-theme">
+                <div class="single-causes style-two">
+                    <div class="causes-img">
+                        <a href="causes-details.html">
+								<img src="assets/images/causes/causes-1.jpg" alt="Image">
+								<span class="tag">Education</span>
+							</a>
+                    </div>
+
+                    <div class="bar-1">
+                        <h3>
+                            <a href="causes-details.html">
+									Education for poor children
+								</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+
+                        <div class="bar" data-width="75%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">75%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>$15,000.00</li>
+                            <li class="goal"><span>Goal: </span>$20,000.00</li>
+                        </ul>
+
+                        <ul class="donate-read">
+                            <li>
+                                <a href="donation.html" class="default-btn">
+										DONATE NOW
+									</a>
+                                <a href="causes-details.html" class="read-more">
+										READ MORE
+									</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="single-causes style-two">
+                    <div class="causes-img">
+                        <a href="causes-details.html">
+								<img src="assets/images/causes/causes-2.jpg" alt="Image">
+								<span class="tag">Water delivery</span>
+							</a>
+                    </div>
+
+                    <div class="bar-1">
+                        <h3>
+                            <a href="causes-details.html">
+									Water for all children
+								</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+
+                        <div class="bar" data-width="90%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">90%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>$8,000.00</li>
+                            <li class="goal"><span>Goal: </span>$10,000.00</li>
+                        </ul>
+
+                        <ul class="donate-read">
+                            <li>
+                                <a href="donation.html" class="default-btn">
+										DONATE NOW
+									</a>
+                                <a href="causes-details.html" class="read-more">
+										READ MORE
+									</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="single-causes style-two">
+                    <div class="causes-img">
+                        <a href="causes-details.html">
+								<img src="assets/images/causes/causes-3.jpg" alt="Image">
+								<span class="tag">Medical</span>
+							</a>
+                    </div>
+
+                    <div class="bar-1">
+                        <h3>
+                            <a href="causes-details.html">
+									Help for treatment
+								</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+
+                        <div class="bar" data-width="50%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">50%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>$10,000.00</li>
+                            <li class="goal"><span>Goal: </span>$20,000.00</li>
+                        </ul>
+
+                        <ul class="donate-read">
+                            <li>
+                                <a href="donation.html" class="default-btn">
+										DONATE NOW
+									</a>
+                                <a href="causes-details.html" class="read-more">
+										READ MORE
+									</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="single-causes style-two">
+                    <div class="causes-img">
+                        <a href="causes-details.html">
+								<img src="assets/images/causes/causes-4.jpg" alt="Image">
+								<span class="tag">Food</span>
+							</a>
+                    </div>
+
+                    <div class="bar-1">
+                        <h3>
+                            <a href="causes-details.html">
+									Provide healthy food
+								</a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ...</p>
+
+                        <div class="bar" data-width="60%">
+                            <div class="bar-inner"></div>
+                            <div class="bar-percent">60%</div>
+                        </div>
+
+                        <ul class="total-donate">
+                            <li><span>Raised: </span>$12,000.00</li>
+                            <li class="goal"><span>Goal: </span>$20,000.00</li>
+                        </ul>
+
+                        <ul class="donate-read">
+                            <li>
+                                <a href="donation.html" class="default-btn">
+										DONATE NOW
+									</a>
+                                <a href="causes-details.html" class="read-more">
+										READ MORE
+									</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Our Causes Area -->
+
+    <!-- Start What We Do Area -->
+    <section class="what-we-do-area ptb-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="what-we-do-content">
+                        <span class="top-title">WHAT WE DO</span>
+                        <h2>Manage all activities from our foundation</h2>
+                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcor per sit amet ligula. Curabitur arcu erat, accumsan id imperdiet et, portti tor at
+                            sem. Praesent sapien massa, convallis.</p>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <ul>
+                                    <li>
+                                        <i class="ri-check-line"></i> Care and protection
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i> Water delivery
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i> Adopt a child
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i> Medical camps
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i> Cancer treatment
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-6">
+                                <ul>
+                                    <li>
+                                        <i class="ri-check-line"></i> Medicine help
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i> Education help
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i> Special needs
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i> Safe house
+                                    </li>
+                                    <li>
+                                        <i class="ri-check-line"></i> Food collect
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="what-we-do-img">
+                        <img src="assets/images/what-we-do-img.png" alt="Image">
+
+                        <div class="what-we-do-play">
+                            <a href="https://www.youtube.com/watch?v=dieB9zAJXGE" class="video-btn popup-youtube">
+									<i class="ri-play-fill"></i>
+								</a>
+                        </div>
+
+                        <img src="assets/images/what-we-do-shape.png" class="what-we-do-shape" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+				<div class="what-we-do-shape-area">
+				<img src="assets/images/what-we-do-shape-area.png" alt="Image">
+			</div>
+			-->
+    </section>
+    <!-- End What We Do Area -->
+
+    <!-- Start Counter Area -->
+    <section class="counter-area bg-f9fafb pt-100 pb-70">
+        <div class="container">
+            <div class="section-title">
+                <span class="top-title">SOME STATISTIC</span>
+                <h2>We want to show the audience some statistics of our work</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-counter">
+                        <img src="assets/images/icon/icon-5.png" alt="Image">
+                        <h2>
+                            <span class="odometer" data-count="153720">00</span>
+                        </h2>
+                        <h4>Meals served</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-counter">
+                        <img src="assets/images/icon/icon-6.png" alt="Image">
+                        <h2>
+                            <span class="odometer" data-count="153720">00</span>
+                        </h2>
+                        <h4>Nights shelter</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-counter">
+                        <img src="assets/images/icon/icon-7.png" alt="Image">
+                        <h2>
+                            <span class="target">$</span>
+                            <span class="odometer" data-count="2.35">00</span>
+                            <span class="target">M</span>
+                        </h2>
+                        <h4>Funds spent</h4>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-counter">
+                        <img src="assets/images/icon/icon-8.png" alt="Image">
+                        <h2>
+                            <span class="odometer" data-count="12562">00</span>
+                        </h2>
+                        <h4>Supporting donors</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Counter Area -->
+
+    <!-- Start Gallery Area -->
+    <section class="gallery-area gallery-popup pt-100 pb-70">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="section-title section-title-left">
+                        <span class="top-title">OUR GALLERY</span>
+                        <h2>Sample images of some recent work are highlighted</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="text-right">
+                        <a href="gallery.html" class="default-btn">SEE MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="gallery-img">
+                                <img src="assets/images/gallery/gallery-1.jpg" alt="Image">
+
+                                <a href="assets/images/gallery/gallery-1.jpg" class="img-view">
+										<i class="ri-add-circle-line"></i>
+									</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="gallery-img">
+                                <img src="assets/images/gallery/gallery-2.jpg" alt="Image">
+
+                                <a href="assets/images/gallery/gallery-2.jpg" class="img-view">
+										<i class="ri-add-circle-line"></i>
+									</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="gallery-img">
+                                <img src="assets/images/gallery/gallery-3.jpg" alt="Image">
+
+                                <a href="assets/images/gallery/gallery-3.jpg" class="img-view">
+										<i class="ri-add-circle-line"></i>
+									</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="gallery-img">
+                                <img src="assets/images/gallery/gallery-4.jpg" alt="Image">
+
+                                <a href="assets/images/gallery/gallery-4.jpg" class="img-view">
+										<i class="ri-add-circle-line"></i>
+									</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="gallery-img">
+                                <img src="assets/images/gallery/gallery-5.jpg" alt="Image">
+
+                                <a href="assets/images/gallery/gallery-5.jpg" class="img-view">
+										<i class="ri-add-circle-line"></i>
+									</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="gallery-img">
+                                <img src="assets/images/gallery/gallery-6.jpg" alt="Image">
+
+                                <a href="assets/images/gallery/gallery-6.jpg" class="img-view">
+										<i class="ri-add-circle-line"></i>
+									</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Gallery Area -->
+
+
+
+
+    <!-- Start Footer Area -->
+    <footer class="footer-area bg-f9fafb pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget active">
+                        <a href="index.html" class="logo">
+								<img src="assets/images/logo.png" alt="Image">
+							</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic fuga quaerat voluptatum omnis, id iste exercitationem asperiores ipsa minus placeat</p>
+
+                        <ul class="social-link">
+                            <li>
+                                <h3>Follow us:</h3>
+                            </li>
+
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+										<i class="ri-facebook-fill"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+										<i class="ri-instagram-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+										<i class="ri-twitter-fill"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+										<i class="ri-youtube-fill"></i>
+									</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Services</h3>
+
+                        <ul class="import-link">
+                            <li>
+                                <a href="about.html">
+										About
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="my-account.html">
+										My account
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html">
+										Privacy policy
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="terms-of-service.html">
+										Terms of service
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+										Contact us
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Import Links</h3>
+
+                        <ul class="import-link">
+                            <li>
+                                <a href="blog.html">
+										Blog
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="blog-details.html">
+										Blog Details
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="causes.html">
+										Causes
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="causes-details.html">
+										Causes Details
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                            <li>
+                                <a href="donation.html">
+										Donation
+										<i class="ri-arrow-right-line"></i>
+									</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget">
+                        <h3>Find us</h3>
+
+                        <ul class="address">
+                            <li class="location">
+                                3435 Railroad street sault <br> sainte marie, MI 49783
+                            </li>
+                            <li>
+                                <a href="/cdn-cgi/l/email-protection#79111c15151639151c0c1d571a1614"><span class="__cf_email__" data-cfemail="462e232a2a29062a2333226825292b">[email&#160;protected]</span></a>
+                            </li>
+                            <li>
+                                <a href="/cdn-cgi/l/email-protection#127b7c747d527e7767763c717d7f"><span class="__cf_email__" data-cfemail="11787f777e517d7464753f727e7c">[email&#160;protected]</span></a>
+                            </li>
+                            <li>
+                                <a href="tel:+1-(514)-312-5678" class="call-us">+1 (514) 312-5678</a>
+                            </li>
+                            <li>
+                                <a href="tel:+1-(514)-312-5679" class="call-us">+1 (514) 312-5679</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- Start Copy Right Area -->
+    <div class="copy-right-area bg-f9fafb">
+        <div class="container">
+            <p>
+                Copyright <i class="ri-copyright-line"></i> 2023 Gramin vikas sansthan.
+            </p>
+        </div>
+    </div>
+    <!-- End Copy Right Area -->
+
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class="ri-arrow-up-s-fill"></i>
+        <i class="ri-arrow-up-s-fill"></i>
+    </div>
+    <!-- End Go Top Area -->
+
+    <!-- Jquery Min JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Bootstrap Bundle Min JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Meanmenu Min JS -->
+    <script src="assets/js/meanmenu.min.js"></script>
+    <!-- Owl Carousel Min JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Wow Min JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Magnific Popup Min JS -->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!-- Appear Min JS -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- Odometer Min JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- Form Validator Min JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Ajaxchimp Min JS -->
+    <script src="assets/js/ajaxchimp.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
 </html>
