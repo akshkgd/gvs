@@ -7,6 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .PaymentButton--rzp-dark-standard.svelte-ekc7fv.svelte-ekc7fv {
+          background: #02a95c !important;
+          border-color: #02a95c !important;
+      }
+
+      .PaymentButton--rzpTheme.svelte-ekc7fv.svelte-ekc7fv::before {
+          width: 0 !important;
+      }
+      .PaymentButton.svelte-ekc7fv.svelte-ekc7fv {
+          border-radius: 40px !important;
+      }
+      .razorpay-payment-button.svelte-ohbfj8 {
+    padding-top: 8px !important;
+  }
+  </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,12 +54,151 @@
                 <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <div class="d-flex" role="search">
+              <!-- <div class="">
+                <form>
+                  <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                      data-payment_button_id="pl_LiidDHRvjZfcLr" async> </script>
+              </form>
+              </div> -->
               <!-- <inpu/t class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-              <button class="btn btn-primary text-light rounded-pill px-4" type="submit">Donate Now</button>
-            </form>
+              <a href="/donate" target="_blank" class="btn btn-primary text-light rounded-pill px-4" type="submit">Donate Now</a>
+            </div>
           </div>
         </div>
       </nav>
+
+      <section class="mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="hero">
+                      <img src="./assets/education.jpg" class="hero-img" alt="">
+                      <div class="hero-content">
+                        <h1 class="fs-2">Educate a poor rural child of chitrakoot in need</h1>
+                        <p>Donations will sponsor the tuition and school supplies for a child</p>
+                        <a href="" class="btn btn-primary rounded-pill px-4 text-white">Give Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="hero">
+                      <img src="./assets/women.jpg" class="hero-img" alt="">
+                      <div class="hero-content">
+                        <h1 class="fs-2">Sponsor vocational training for poor young women</h1>
+                        <p>Sponsor the cost of training for one student</p>
+                        <a href="" class="btn btn-primary rounded-pill px-4 text-white">Give Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="hero">
+                      <img src="./assets/health.jpg" class="hero-img" alt="">
+                      <div class="hero-content">
+                        <h1 class="fs-2">Help a poor patient fight his medical needs</h1>
+                        <p>Donations will sponsor the medical and hospital bills for poors.</p>
+                        <a href="" class="btn btn-primary rounded-pill px-4 text-white">Give Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <!-- <div class="hero">
+                <img src="./assets/women.jpg" class="hero-img" alt="">
+                <div class="hero-content">
+                  <h1 class="fs-2">Educate a poor rural child of chitrakoot in need</h1>
+                  <p>Donations will sponsor the tuition and school supplies for a child</p>
+                  <a href="" class="btn btn-primary rounded-pill px-4 text-white">Give Now</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row mt-5">
+            <h1 class="fs-3 fw-bold text-center my-5">Joining our missions is the most impactful way to give </h1>
+          
+
+            <div class="col-md-4">
+              <div class="donate-card">
+                <div class="donate-card-header">
+                <img src="./assets/education-mob.jpeg" class="donate-card-img" alt="">
+                  <p class="tag">Education help</p>
+                </div>
+                <div class="donate-card-body">
+                    <h4 class="fs-5">Sudan conflict : Donate Now</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe fugit id repellendus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="donate-card">
+                <div class="donate-card-header">
+                <img src="./assets/women-mobile.jpg" class="donate-card-img" alt="">
+                  <p class="tag">Education help</p>
+                </div>
+                <div class="donate-card-body">
+                    <h4 class="fs-5">Sudan conflict : Donate Now</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe fugit id repellendus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="donate-card">
+                <div class="donate-card-header">
+                <img src="./assets/health-mobile.jpeg" class="donate-card-img" alt="">
+                  <p class="tag">Education help</p>
+                </div>
+                <div class="donate-card-body">
+                    <h4 class="fs-5">Sudan conflict : Donate Now</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe fugit id repellendus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container ">
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <h1 class="fw-bold fs-3 text-center">We are on a mission to help needy in chitrakoot</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary mb-0">&copy; Gramin Vikas Sansthan</p>
+            <p class="small text-center text-gray">2023 All rights reserved</p>
+          </footer>
+        </div>
+      </section>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

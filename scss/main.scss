@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 $theme-colors: (
   "primary":    #02a95c,
   "danger":     rgb(255, 23, 23),
@@ -5,4 +6,5 @@ $theme-colors: (
   "gray":       rgb(94, 94, 94),
   "dark":       black,
 );
+$font-family-base: 'Poppins', sans-serif;;
 @import '../node_modules/bootstrap/scss/bootstrap.scss'
