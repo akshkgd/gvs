@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+    <style>
+        .PaymentButton--rzp-dark-standard.svelte-ekc7fv.svelte-ekc7fv {
+            background: #02a95c !important;
+            border-color: #02a95c !important;
+        }
+
+        .PaymentButton--rzpTheme.svelte-ekc7fv.svelte-ekc7fv::before {
+            width: 0 !important;
+        }
+
+        .PaymentButton.svelte-ekc7fv.svelte-ekc7fv {
+            border-radius: 40px !important;
+        }
+
+        .razorpay-payment-button.svelte-ohbfj8 {
+            padding-top: 8px !important;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>About</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assets/gvslogo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/documents">Documents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+
+
+                </ul>
+                <div class="d-flex" role="search">
+                    <!-- <div class="">
+            <form>
+              <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                  data-payment_button_id="pl_LiidDHRvjZfcLr" async> </script>
+          </form>
+          </div> -->
+                    <!-- <inpu/t class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <a href="/donate" target="_blank" class="btn btn-primary text-light rounded-pill px-4"
+                        type="submit">Donate Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+
+
+                <div class="col-md-8">
+                    <!-- <h1 class="fs-3 fw-bold text-center my-5">Joining our missions is the most impactful way to give </h1> -->
+                    <h1 class="fs-3 fw-bold  my-5">Know more about Gramin Vikas Sansthan </h1>
+
+                    <p>Gramin Vikas Sansthan is a non-governmental organization committed to promoting rural development
+                        in India. We believe that poverty is a major obstacle to the well-being of individuals and
+                        communities. Therefore, we strive to alleviate poverty and improve the lives of those in need.
+                    </p>
+                    <p>One organization that shares our commitment to social impact is GiveIndia (Give Foundation).
+                        GiveIndia was founded in 2000 with the goal of reducing poverty in India by implementing
+                        impactful social initiatives. Their platform allows individuals and institutions to donate funds
+                        to chosen causes and supports programs with high-impact outcomes throughout India.</p>
+                    <p>GiveIndia's strong network of partners and extensive geographical presence enables them to bring
+                        people and organizations closer to realizing a poverty-free India. We admire their work and
+                        believe that their efforts are making a significant difference in the lives of many. We share
+                        their vision of a better India and are proud to support their mission.</p>
+                    <p>At Gramin Vikas Sansthan, we understand that addressing poverty requires a multifaceted approach.
+                        Through our partnership with GiveIndia and other like-minded organizations, we are working
+                        towards a common goal of improving the lives of those in need. Together, we can create a
+                        brighter future for all.</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="my-5 fb-s">
+        <div class="container pt-lg-5 mt-lg-5">
+            <div class="text-center">
+                <h1 class=" fw-bolder">We love helping people</h1>
+                <p class="fs-5 mb-5">Here's some memories from gramin vikas sansthan that we are proud of!</p>
+            </div>
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-md-4">
+                    <img src="./assets/about/Education-1.JPG" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Education-11.jpg" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Education-2.JPG" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Old Age Home-1 (1).jpg" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Old Age Home-5.jpg" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Old Age Home-7.jpg" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Animol-12 (1).jpg" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Animol-2.jpg" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Animol-3.jpg" class="img-fluid about-img" alt="">
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/about/Animol-7.jpg" class="img-fluid about-img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="/about" class="nav-link px-2 text-body-secondary">About Us</a></li>
+                    <li class="nav-item"><a href="/documents" class="nav-link px-2 text-body-secondary">Documents</a></li>
+                    <li class="nav-item"><a href="/contact" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+                    <li class="nav-item"><a href="/donate" class="nav-link px-2 text-body-secondary">Donate Now</a></li>
+                </ul>
+                <p class="text-center text-body-secondary mb-0">&copy; Gramin Vikas Sansthan</p>
+                <p class="small text-center text-gray">2023 All rights reserved</p>
+            </footer>
+        </div>
+    </section>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
