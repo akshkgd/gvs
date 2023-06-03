@@ -61,6 +61,7 @@
     font-size: 15px;
   }
   .donate-card{
+    margin-top: 12px !important;
     background-color: #f5f5f5;
     margin-bottom: 12px;
     border-radius: 16px;
@@ -107,4 +108,10 @@ section{
 .about-img{
     border-radius: 14px;
     margin-top: 18px;
+}
+.ck-radius{
+    border-radius: 16px;
+}
+.border-primary{
+    border:none !important;
 }
